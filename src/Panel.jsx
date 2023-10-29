@@ -844,7 +844,7 @@ const colorBank =
   }
 ]
 
-console.log(colorBank.length)
+
 
 export default function Panel(){
 
@@ -860,8 +860,8 @@ export default function Panel(){
             style={{
                 fontFamily: 'monospace',
                 backgroundColor: color,
-                width: 5,
-                height: 5
+                width: 3,
+                height: 3
         }}>
             
         </div>
