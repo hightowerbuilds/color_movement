@@ -850,18 +850,19 @@ export default function Panel(){
 
     
     const randomIndex = Math.floor(Math.random() * 140);
+   
     const [ color, setColor ] = useState(colorBank[0].hex)
     const handleMouseEnter = function(){
-       color = colorBank[0].hex ? setColor(colorBank[139].hex) : setColor(colorBank[randomIndex].hex) }
-
+       setColor(colorBank[randomIndex].hex)
+    }
     return (
 
-        <div onMouseEnter={handleMouseEnter} 
+        <div onMouseEnter={handleMouseEnter}
             style={{
                 fontFamily: 'monospace',
                 backgroundColor: color,
-                width: 3,
-                height: 3
+                width: 300,
+                height: 300
         }}>
             
         </div>
