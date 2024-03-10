@@ -862,7 +862,8 @@ export default function Panel(){
                 fontFamily: 'monospace',
                 backgroundColor: color,
                 width: 5,
-                height: 5
+                height: 5,
+                borderRadius: 5,
         }}>
             
         </div>

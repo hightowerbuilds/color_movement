@@ -5,7 +5,7 @@ import Panel from './Panel'
 function App() {
   const compBank = []
   const compGenerator = function(){
-   for (let i = 0; i <= 15000; i++){
+   for (let i = 0; i <= 319; i++){
     compBank.push(<Panel/>)
    } 
    return compBank
@@ -17,10 +17,19 @@ function App() {
   }}>
     
    {compGenerator()}
- 
+   {compGenerator()}
+   {compGenerator()}
+   {compGenerator()}
+   {compGenerator()}
+   {compGenerator()}
+   {compGenerator()}
+   {compGenerator()}
+  
+  
   </div>
 
   )
   }
 
 export default App
+
