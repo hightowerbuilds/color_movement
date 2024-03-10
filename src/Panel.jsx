@@ -861,8 +861,8 @@ export default function Panel(){
             style={{
                 fontFamily: 'monospace',
                 backgroundColor: color,
-                width: 25,
-                height: 25
+                width: 5,
+                height: 5
         }}>
             
         </div>
