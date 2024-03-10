@@ -851,7 +851,7 @@ export default function Panel(){
     
     const randomIndex = Math.floor(Math.random() * 140);
    
-    const [ color, setColor ] = useState(colorBank[0].hex)
+    const [ color, setColor ] = useState("#000000")
     const handleMouseEnter = function(){
        setColor(colorBank[randomIndex].hex)
     }
