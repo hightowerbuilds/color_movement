@@ -863,7 +863,8 @@ export default function Panel(){
                 backgroundColor: color,
                 width: 8,
                 height: 8,
-                borderRadius: 5,
+                borderTopLeftRadius: 50,
+                borderBottomRightRadius: 50
         }}>
             
         </div>
