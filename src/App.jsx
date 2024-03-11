@@ -15,7 +15,21 @@ function App() {
   <div style={{
     display: 'flex', flexWrap: 'wrap'
   }}>
-    
+  <div style={{
+    position: 'absolute',
+    zIndex: 1,
+    height: 100,
+    width: 300,
+    border: '1px beige solid',
+    opacity: .6,
+    margin: 10
+  }}>
+    <p style={{
+      fontFamily: 'monospace',
+      color: 'beige',
+      fontSize: 16
+    }}>this is for the features</p>
+  </div>
    {compGenerator()}
    {compGenerator()}
    {compGenerator()}
