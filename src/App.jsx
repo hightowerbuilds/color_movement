@@ -3,6 +3,9 @@ import './App.css'
 import Panel from './Panel'
 
 function App() {
+
+
+  
   const compBank = []
   const compGenerator = function(){
    for (let i = 0; i <= 969; i++){
