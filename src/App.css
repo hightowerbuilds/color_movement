@@ -4,3 +4,23 @@ box-sizing: border-box;
 background-color: #242424;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navBar {
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    width: 300px;
+    border: 1px beige solid;
+    opacity: 0.6;
+    margin: 10px;
+}
+
+.features {
+    font-family: monospace;
+    color: beige;
+    font-size: 16px;
+}

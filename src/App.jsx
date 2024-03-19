@@ -15,18 +15,8 @@ function App() {
   }
   return (
     
-  <div style={{
-    display: 'flex', flexWrap: 'wrap'
-  }}>
-  <div style={{
-    position: 'absolute',
-    zIndex: 1,
-    height: 100,
-    width: 300,
-    border: '1px beige solid',
-    opacity: .6,
-    margin: 10
-  }}>
+  <div  className='container'>
+  <div className='navBar'>
     <p style={{
       fontFamily: 'monospace',
       color: 'beige',
