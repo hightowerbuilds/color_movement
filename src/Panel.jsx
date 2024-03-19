@@ -858,13 +858,13 @@ export default function Panel(){
   }
   
   let colorList = [];
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 5; i++) {
     colorList.push(getRandomHexColor());
   }
   
   console.log(colorList)
     
-    const randomIndex = 0
+    const randomIndex = Math.floor(Math.random() * 4);
    
     const [ color, setColor ] = useState("#000000")
     const handleMouseEnter = function(){
@@ -872,7 +872,7 @@ export default function Panel(){
     }
     return (
 
-        <div onMouseOut={handleMouseEnter}
+        <div onMouseEnter={handleMouseEnter}
             style={{
                 fontFamily: 'monospace',
                 backgroundColor: color,
