@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './Panel.css'
 
 export default function Panel(){
 
@@ -27,15 +27,7 @@ export default function Panel(){
     }
     return (
 
-        <div onMouseEnter={handleMouseEnter}
-            style={{
-                fontFamily: 'monospace',
-                backgroundColor: color,
-                width: 8,
-                height: 8,
-                borderTopLeftRadius: 50,
-                borderBottomRightRadius: 50
-        }}>
+        <div className="panel" onMouseEnter={handleMouseEnter} style={{ backgroundColor: color, }}>
             
         </div>
     )

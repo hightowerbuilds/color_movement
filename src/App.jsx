@@ -17,11 +17,7 @@ function App() {
     
   <div  className='container'>
   <div className='navBar'>
-    <p style={{
-      fontFamily: 'monospace',
-      color: 'beige',
-      fontSize: 16
-    }}>this is for the features</p>
+    <p className='features'>this is for the features</p>
   </div>
    {compGenerator()}
    {compGenerator()}
@@ -31,10 +27,7 @@ function App() {
    {compGenerator()}
    {compGenerator()}
    {compGenerator()}
-  
-  
   </div>
-
   )
   }
 
