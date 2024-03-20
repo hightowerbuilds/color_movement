@@ -39,7 +39,7 @@ function App() {
     <input className='input' type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
     <button className='inputButton' onClick={() => setPlacingHeight(height)}>HEIGHT</button>
     <input className='input' type="number" value={radius} onChange={(e) => setRadius(e.target.value)} />
-    <button className='inputButton' onClick={() => setPlacingRadius(radius)}>RADIUS</button>
+    <button className='inputButton' onClick={() => setPlacingRadius(radius)}>RADIUS: NUMBERS 1-50 </button>
 
     </div>
   </div>
