@@ -11,17 +11,12 @@ export default function Panel(props){
     }
     return color;
   }
-  
-  // let colorList = [];
-  // for (let i = 0; i < 5; i++) {
-  //   colorList.push(getRandomHexColor());
-  // }
+
   
   const randomColor = getRandomHexColor()
 
   console.log(randomColor);
-    
-    // const randomIndex = Math.floor(Math.random() * 4);
+  
 
     const [ color, setColor ] = useState("#000000")
    
@@ -35,7 +30,7 @@ export default function Panel(props){
         onMouseEnter={handleMouseEnter} 
         style={{ 
           backgroundColor: color,
-          borderRadius: props.radius,
+          borderRadius: `${props.radius}%`,
           height: `${props.height}vh`,
           width: `${props.width}vh`
           }}>

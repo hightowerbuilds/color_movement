@@ -9,19 +9,9 @@ function App() {
   const [ radius, setRadius ] = useState(0)
   const [ height, setHeight] = useState(1)
   const [ width, setWidth ] = useState(1)
-  const [ placingWidth, setPlacingWidth ] = useState(width)
-  
-  const handleWidth = (event) => {
-    setWidth(event.target.value);
-  };
-
-  const handleHeight = (event) => {
-    setHeight(event.target.value);
-  }
-
-  const handleRadius = (event) => {
-    setRadius(event.target.value);
-  }
+  const [ placingWidth, setPlacingWidth ] = useState(1);
+  const [ placingHeight, setPlacingHeight ] = useState(1);
+  const [ placingRadius, setPlacingRadius ] = useState(0);
 
 
 
@@ -31,8 +21,8 @@ function App() {
     compBank.push(
     <Panel 
       width={placingWidth} 
-      height={height}
-      radius={radius}
+      height={placingHeight}
+      radius={placingRadius}
     />)
    } 
    return compBank
@@ -46,9 +36,10 @@ function App() {
     <p>COLOR_MOVEMENT</p>
     <input className='input' type="number" value={width} onChange={(e) => setWidth(e.target.value)} />
     <button onClick={() => setPlacingWidth(width)}>WIDTH</button>
-    <input className='input' type="number" value={height} onChange={handleHeight} />
-    <input className='input' type="number" value={radius} onChange={handleRadius} />
-
+    <input className='input' type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
+    <button onClick={() => setPlacingHeight(height)}>HEIGHT</button>
+    <input className='input' type="number" value={radius} onChange={(e) => setRadius(e.target.value)} />
+    <button onClick={() => setPlacingRadius(radius)}>RADIUS</button>
 
     </div>
   </div>
