@@ -25,8 +25,19 @@ background-color: #242424;
 
 .features {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     font-family: monospace;
     color: beige;
     font-size: 46px;
+    padding: .5%;
+}
+
+.input {
+    width: 7vh;
+    height: 4vh;
+    margin: 1vh;
+    margin-left: 3vh;
+    background-color: beige;
+    font-family: monospace;
+    font-size: 24px;
 }
