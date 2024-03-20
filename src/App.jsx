@@ -35,11 +35,11 @@ function App() {
    
     <p>COLOR_MOVEMENT</p>
     <input className='input' type="number" value={width} onChange={(e) => setWidth(e.target.value)} />
-    <button className='inputButton' onClick={() => setPlacingWidth(width)}>WIDTH</button>
+    <button className='inputButton' onClick={() => setPlacingWidth(width)}>SET WIDTH</button>
     <input className='input' type="number" value={height} onChange={(e) => setHeight(e.target.value)} />
-    <button className='inputButton' onClick={() => setPlacingHeight(height)}>HEIGHT</button>
+    <button className='inputButton' onClick={() => setPlacingHeight(height)}>SET HEIGHT</button>
     <input className='input' type="number" value={radius} onChange={(e) => setRadius(e.target.value)} />
-    <button className='inputButton' onClick={() => setPlacingRadius(radius)}>RADIUS: NUMBERS 1-50 </button>
+    <button className='inputButton' onClick={() => setPlacingRadius(radius)}>SET RADIUS: NUMBERS 1-50 </button>
 
     </div>
   </div>
