@@ -17,7 +17,7 @@ function App() {
     
   <div  className='container'>
   <div className='navBar'>
-    <p className='features'>this is for the features</p>
+  <div className='features'>COLOR_MOVEMENT</div>
   </div>
    {compGenerator()}
    {compGenerator()}

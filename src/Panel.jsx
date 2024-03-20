@@ -12,18 +12,20 @@ export default function Panel(){
     return color;
   }
   
-  let colorList = [];
-  for (let i = 0; i < 5; i++) {
-    colorList.push(getRandomHexColor());
-  }
+  // let colorList = [];
+  // for (let i = 0; i < 5; i++) {
+  //   colorList.push(getRandomHexColor());
+  // }
   
-  console.log(colorList)
+  const randomColor = getRandomHexColor()
+
+  console.log(randomColor);
     
-    const randomIndex = Math.floor(Math.random() * 4);
+    // const randomIndex = Math.floor(Math.random() * 4);
    
     const [ color, setColor ] = useState("#000000")
     const handleMouseEnter = function(){
-       setColor(colorList[randomIndex])
+       setColor(randomColor)
     }
     return (
 
