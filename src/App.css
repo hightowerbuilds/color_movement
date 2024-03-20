@@ -41,3 +41,7 @@ background-color: #242424;
     font-family: monospace;
     font-size: 24px;
 }
+
+.inputButton {
+    color: beige;
+}
