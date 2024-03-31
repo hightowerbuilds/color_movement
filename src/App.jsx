@@ -42,13 +42,6 @@ function App() {
     </div>
   </div>
    {compGenerator()}
-   {/* {compGenerator()}
-   {compGenerator()}
-   {compGenerator()}
-   {compGenerator()}
-   {compGenerator()}
-   {compGenerator()}
-   {compGenerator()} */}
   </div>
   )
   }
