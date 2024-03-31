@@ -15,18 +15,16 @@ function App() {
 
 
 
-  const compBank = []
-  const compGenerator = function(){
-   for (let i = 0; i <= 969; i++){
-    compBank.push(
-    <Panel 
-      width={placingWidth} 
-      height={placingHeight}
-      radius={placingRadius}
-    />)
-   } 
-   return compBank
-  }
+  const compGenerator = function() {
+    return Array.from({ length: 17900 }, (_, i) => (
+      <Panel 
+        key={i} // Important for React's rendering
+        width={placingWidth} 
+        height={placingHeight} 
+        radius={placingRadius} 
+      />
+    ));
+  };
   return (
     
   <div className='container'>
@@ -44,13 +42,13 @@ function App() {
     </div>
   </div>
    {compGenerator()}
+   {/* {compGenerator()}
    {compGenerator()}
    {compGenerator()}
    {compGenerator()}
    {compGenerator()}
    {compGenerator()}
-   {compGenerator()}
-   {compGenerator()}
+   {compGenerator()} */}
   </div>
   )
   }
